@@ -48,7 +48,10 @@ class artistfrag : Fragment() {
         image.visibility=View.INVISIBLE
         val textsum = view.findViewById<TextView>(R.id.artisttext)
         textsum.visibility= View.INVISIBLE
-
+        val count = view.findViewById<TextView>(R.id.textView11)
+        count.visibility= View.INVISIBLE
+        val listner = view.findViewById<TextView>(R.id.textView12)
+        listner.visibility=View.INVISIBLE
         button.setOnClickListener {
 
 
@@ -74,9 +77,11 @@ class artistfrag : Fragment() {
             textsum.text= data.value!!.bio.sum
             button.visibility = View.INVISIBLE
             tittle.visibility= View.VISIBLE
-
+            count.text=data.value!!.stats.playcount.toString()
+            count.visibility=View.VISIBLE
             image.visibility=View.VISIBLE
-
+            listner.text=data.value!!.stats.listeners.toString()
+            listner.visibility= View.VISIBLE
             textsum.visibility= View.VISIBLE
         }
 

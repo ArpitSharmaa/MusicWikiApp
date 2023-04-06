@@ -28,7 +28,7 @@ class trackfrag : Fragment() {
             param2 = it.getString(ARG_PARAM2)
 
         }
-//        viewModel.gettrackinfo(param1!!,param2!!)
+        viewModel.gettrackinfo(param1!!,param2!!)
 
 
     }
@@ -39,7 +39,7 @@ class trackfrag : Fragment() {
 
     ): View? {
         // Inflate the layout for this fragment
-//        viewModel.gettrackinfo(param1!!,param2!!)
+        viewModel.gettrackinfo(param1!!,param2!!)
         return inflater.inflate(R.layout.fragment_track, container, false)
 
     }
