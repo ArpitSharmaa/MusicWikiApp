@@ -1,12 +1,12 @@
 # MusicWikiApp
 The development of the application prioritized the inclusion 
-of all the basic features that were required. The initial step 
+of all the basic features mentioned in the task. The initial step 
 involved the creation of the necessary data classes for fetching 
-the data. As the objective was to make the application online, Room
- database was not used. Although this limited some of the functionalities, 
+the data. As the objective was to make the application to fetch live data, Room
+ database was not used to store the data fetched. Although this limited some of the functionalities, 
 it ensured that the latest information was always accessible to the users.
 
-To fetch the data, the GET annotation was utilized. Subsequently, the data
+To fetch the data, the @GET was utilized. Subsequently, the data
  was passed on to the viewmodel, which facilitated the display of the information 
 on the user interface. To present the information in a more organized manner, recycler
  view was implemented for all the lists in the application. The 'press to show' feature was
